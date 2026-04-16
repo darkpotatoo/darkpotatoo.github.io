@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 Technical Binder</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { display: flex; flex-direction: column; background: #525659; }
+    embed {
+      flex: 1;
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+    .fallback {
+      display: none;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+    .fallback a {
+      margin-top: 1rem;
+      color: #90caf9;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <embed src="2026 Technical Binder.pdf" type="application/pdf" />
+  <noembed>
+    <div class="fallback" style="display:flex;">
+      <p>Your browser cannot display PDFs inline.</p>
+      <a href="2026 Technical Binder.pdf" download>Download 2026 Technical Binder.pdf</a>
+    </div>
+  </noembed>
+</body>
+</html>
